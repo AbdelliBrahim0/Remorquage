@@ -2321,6 +2321,17 @@ section {
   }
 }
 
+@media (min-width: 769px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 140px;
+    min-height: 800px;
+  }
+  .hero-content {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   section {
     padding: 60px 0;
