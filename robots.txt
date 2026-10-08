@@ -1,19 +1,36 @@
+# ==========================================
+# Remorquage Nasri - Robots.txt
+# ==========================================
+
 User-agent: *
 Allow: /
 
+# ==========================================
 # Sitemap
-Sitemap: https://remorquagenasri.com/sitemap.xml
+# ==========================================
 
-# Disallow specific files if needed
-# Disallow: /admin/
-# Disallow: /private/
+Sitemap: https://remorquagenasri.vercel.app/sitemap.xml
 
-# Allow important directories
+# ==========================================
+# Autoriser explicitement les ressources
+# ==========================================
+
 Allow: /Images/
+Allow: /images/
 Allow: /services/
 Allow: /gallery/
 Allow: /comingsoon/
+Allow: /css/
+Allow: /js/
 
-# Crawl-delay (optional, in seconds)
-Crawl-delay: 1
+# ==========================================
+# Bloquer uniquement les fichiers/dossiers
+# privés s'ils existent réellement
+# ==========================================
 
+Disallow: /admin/
+Disallow: /private/
+
+# Ne pas bloquer CSS, JS ou images :
+# Google doit pouvoir les charger pour
+# comprendre correctement le site.
